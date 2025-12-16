@@ -1,0 +1,245 @@
+<!-- Project created by Gasmi Rafik | License Schedule System -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L1-Admin</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+<div id = "grid-container-index">
+
+<div id="nav-index">
+    <ul id="admin-list">
+        <li><a href="index.html">User</a></li>
+        <li><a class="active" href="L1-Admin.html" style="margin-left: 2em;">L1-Admin</a></li>
+        <li><a href="L2-Admin.html" style="margin-left: 2em;">L2-Admin</a></li>
+        <li><a href="L3-Admin.html" style="margin-left: 2em;">L3-Admin</a></li>
+        <li><a href="ClearCashe.html" style="margin-left: 2em;">ClearCashe</a></li>
+    </ul>
+</div>
+
+
+<div id="nav-Settings">
+            <select id="select-day-L1">
+                <option value="0">Starurday</option>
+                <option value="1">Sunday</option>
+                <option value="2">Monday</option>
+                <option value="3">TuesDay</option>
+                <option value="4">Wednesday</option>
+                <option value="5">Thursday</option>
+            </select>
+
+            <select id="select-Group-L1">
+                <option value="1">G1</option>
+                <option value="2">G2</option>
+                <option value="3">G3</option>
+            </select>
+
+            <select id="select-Time-L1">
+                <option value="2">8:00-9:30</option>
+                <option value="3">9:00-11:00</option>
+                <option value="4">11:00-12:30</option>
+                <option value="5">12:30-14:00</option>
+                <option value="6">14:00-15:30</option>
+                <option value="7">15:30-17:00</option>
+            </select>
+
+            <input type="color" id="color-picker-L1" value="#ff0000">
+
+            <select id="select-Type-L1" >
+                <option value="TD">TD</option>
+                <option value="TP">TP</option>
+                <option value="Cour">Cour</option>
+            </select>
+
+            <select id="select-Module-L1" >
+                <option value="English">English</option>
+                <option value="General Electricity">General Electricity</option>
+                <option value="Analysis 1">Analysis 1</option>
+                <option value="Algebra 1">Algebra 1</option>
+                <option value="Algorithms and Data Structures 1">Algorithms and Data Structures 1</option>
+                <option value="Machine structure 1">Machine structure 1</option>
+            </select>
+
+            <select id="select-Place-L1" >
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+                <option value="K1">K1</option>
+                <option value="K2">K2</option>
+                <option value="K3">K3</option>
+                <option value="K4">K4</option>
+                <option value="K5">K5</option>
+                <option value="K6">K6</option>
+                <option value="K7">K7</option>
+                <option value="K8">K8</option>
+                <option value="K9">K9</option>
+                <option value="K10">K10</option>
+                <option value="K11">K11</option>
+                <option value="K12">K12</option>
+                <option value="K13">K13</option>
+                <option value="K14">K14</option>
+                <option value="K15">K15</option>
+                <option value="K16">K16</option>
+                <option value="K17">K17</option>
+                <option value="K18">K18</option>
+                <option value="K19">K19</option>
+        </select>
+
+        <button id="Change-btn-L1">Change</button>
+
+
+</div>
+
+    <div id = "main">
+
+        <table border="2" id="L1-Table">
+            <tr>
+                <th colspan="2">Day</th>
+                <th>8:00 - 9:30</th>
+                <th>9:00 - 11:00</th>
+                <th>11:00 - 12:30</th>
+                <th>12:00 - 14:00</th>
+                <th>14:00 - 15:30</th>
+                <th>15:30 - 17:00</th>
+            </tr>
+
+            <tr>
+                <th rowspan="3">Saturday</th>
+                <th>G1</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G2</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G3</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+
+            <tr>
+                <th rowspan="3">Sunday</th>
+                <th>G1</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G2</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G3</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th rowspan="3">Monday</th>
+                <th>G1</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G2</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G3</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th rowspan="3">TuesDay</th>
+                <th>G1</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G2</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G3</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th rowspan="3">Wednesday</th>
+                <th>G1</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G2</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G3</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th rowspan="3">Thursday</th>
+                <th>G1</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G2</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+            <tr>
+                <th hidden></th>
+                <th>G3</th>
+                <th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+
+
+        </table>
+
+
+
+
+        
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+<!-- Project created by Gasmi Rafik | License Schedule System -->

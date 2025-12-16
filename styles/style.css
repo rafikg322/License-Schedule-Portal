@@ -1,0 +1,243 @@
+/*----------GLOBAL STYLES----------*/
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+min-height: 100vh;
+font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+background: linear-gradient(135deg, #3b4a63, #455368);
+color: #e5e7eb;
+padding-bottom: 60px;
+}
+
+body::after {
+  content: "© Gasmi Rafik License Schedule Project";
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+  user-select: none;
+  z-index: 9999;
+}
+/*-----------------------------*/
+
+/*----------CALENDAR STYLES----------*/
+table {
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 80%;
+  height: fit-content;
+  max-width:940px;
+  margin: 14px auto;
+  margin-top: 3em;
+  background: rgb(230, 232, 233);
+  border-radius: 1em;
+  overflow: hidden; 
+  border-collapse: collapse;
+  max-width: 80em;
+  max-height: 60em;
+  color: black;
+}
+
+/*-----------------------------------------*/
+
+
+
+
+/* ---------- NAVBAR ---------- */
+#nav-index {
+background: #141d29;
+padding: 1rem 2rem;
+box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+#nav-index ul {
+display: flex;
+align-items: center;
+gap: 1rem;
+list-style: none;
+}
+
+
+#nav-index li.right {
+margin-left: auto;
+}
+
+
+#nav-index a {
+position: relative;
+text-decoration: none;
+color: #e5e7eb;
+padding: 0.6rem 1.2rem;
+border-radius: 10px;
+font-weight: 600;
+transition: color 0.2s ease;
+}
+
+
+#nav-index a::after {
+content: "";
+position: absolute;
+left: 50%;
+bottom: -6px;
+width: 0;
+height: 3px;
+background: #2563eb;
+border-radius: 4px;
+transition: width 0.3s ease, left 0.3s ease;
+}
+
+
+#nav-index a:hover::after {
+width: 70%;
+left: 15%;
+}
+
+
+#nav-index a.active::after {
+width: 70%;
+left: 15%;
+}
+
+
+#nav-index a:hover {
+background: #2c3e50;
+}
+
+
+#nav-index a.active {
+background: #2563eb;
+color: white;
+}
+
+#main-index {
+max-width: 900px;
+margin: 6rem auto;
+background: rgba(255,255,255,0.08);
+padding: 3rem;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+backdrop-filter: blur(8px);
+}
+
+
+#main-index h1 {
+font-size: 2.4rem;
+margin-bottom: 1rem;
+}
+
+
+#main-index p {
+font-size: 1.1rem;
+color: #d1d5db;
+}
+
+#footer-main{
+background: #141d29;
+padding: 1rem;
+box-shadow: 0 -4px 12px rgba(0,0,0,0.3);
+bottom: 0;
+position: sticky;
+text-align: center;
+
+color: #e5e7eb; 
+
+}
+
+#nav-Settings {
+  max-width: 940px;
+  margin: 3rem auto 1.5rem;
+  padding: 1rem 1.2rem;
+  background: #141d29;
+  border-radius: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+
+#nav-Settings select,
+#nav-Settings input[type="color"] {
+  background: #1f2937;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+}
+
+#nav-Settings input[type="color"] {
+  padding: 0.2rem;
+  height: 36px;
+  width: 42px;
+}
+
+
+#nav-Settings select:hover,
+#nav-Settings input[type="color"]:hover {
+  background: #273449;
+}
+
+#nav-Settings select:focus {
+  border-color: #2563eb;
+}
+
+
+#Change-btn-L1,#Change-btn-L2,#Change-btn-L3 {
+  margin-left: auto;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.55rem 1.3rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+#Change-btn-L1:hover,#Change-btn-L2:hover,#Change-btn-L3:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+#Change-btn-L1:active,#Change-btn-L2:active,#Change-btn-L3:active {
+  transform: scale(0.95);
+}
+
+
+
+#clear-cache-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.55rem 1.3rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+  margin-top: 1rem;
+}
+
+#clear-cache-btn:hover {
+  background: #b91c1c; 
+  transform: translateY(-1px);
+}
+
+#clear-cache-btn:active {
+  transform: scale(0.95);
+}
